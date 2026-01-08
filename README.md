@@ -2,7 +2,7 @@
 
 *Puppeteer, Selenium, Playwright로 동적 Webスクレイピング을 위한 완전 자동화 헤드리스 브라우저 솔루션입니다. Scraping Browser는 Bright Data의 인프라에서 GUI로 열립니다.*  
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/scraping-browser) 
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/scraping-browser) 
 
 🔗 **[무료로 시작하기](https://brightdata.co.kr/products/scraping-browser)** | 📖 **[공식 문서](https://docs.brightdata.com/scraping-automation/scraping-browser/introduction)**  
 
@@ -149,7 +149,7 @@ const client = await page.target().createCDPSession();
 const { status } = await client.send('Captcha.solve', { detectTimeout: 30000 });
 ```
 
-> **🤖 [CAPTCHA Solver](https://github.com/luminati-io/Captcha-solver)에 대해 더 알아보십시오.**
+> **🤖 [CAPTCHA Solver](https://github.com/bright-kr/Captcha-solver)에 대해 더 알아보십시오.**
 
 ## 🔄 자동 IPアドレス ローテーション 및 언락  
 Scraping Browser는 통합된 [ローテーティングプロキシ](https://brightdata.co.kr/solutions/rotating-proxies) 덕분에 IPアドレス를 자동으로 로테이션하며, 원활한 데이터 수집을 위해 リトライ도 처리합니다. 
