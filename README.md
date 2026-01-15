@@ -1,6 +1,6 @@
 # 🚀 Bright Data의 Scraping Browser
 
-*Puppeteer, Selenium, Playwright로 동적 Webスクレイピング을 위한 완전 자동화 헤드리스 브라우저 솔루션입니다. Scraping Browser는 Bright Data의 인프라에서 GUI로 열립니다.*  
+*Puppeteer, Selenium, Playwright로 동적 Web스크레이핑을 위한 완전 자동화 헤드리스 브라우저 솔루션입니다. Scraping Browser는 Bright Data의 인프라에서 GUI로 열립니다.*  
 
 [![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/scraping-browser) 
 
@@ -9,15 +9,15 @@
 ---
 
 ## 🔹 개요  
-Scraping Browser는 **브라우저 기반 スクレイピング 솔루션**을 완전 호스팅 형태로 제공하며, **내장 プロキシ 관리**, **CAPTCHA 해결**, **고급 웹사이트 언블로킹**을 통해 **다단계 데이터 수집**을 자동화합니다. **Puppeteer, Playwright, Selenium**을 지원하여 **무제한 규모**로 손쉽게 웹 자동화를 수행할 수 있습니다.  
+Scraping Browser는 **브라우저 기반 스크레이핑 솔루션**을 완전 호스팅 형태로 제공하며, **내장 프록시 관리**, **CAPTCHA 해결**, **고급 웹사이트 언블로킹**을 통해 **다단계 데이터 수집**을 자동화합니다. **Puppeteer, Playwright, Selenium**을 지원하여 **무제한 규모**로 손쉽게 웹 자동화를 수행할 수 있습니다.  
 
 ## ✅ Scraping Browser를 사용해야 하는 이유는 무엇입니까?  
-- **인프라 오버헤드 없음** – 브라우저 인프라를 유지 관리하지 않고도 API를 통해 브라우저 セッション을 실행 및 확장합니다.  
-- **내장 언락 기능** – 내부적으로 **CAPTCHA, ブラウザフィンガープリント, リトライ, JS 렌더링**을 자동 처리합니다.  
+- **인프라 오버헤드 없음** – 브라우저 인프라를 유지 관리하지 않고도 API를 통해 브라우저 세션을 실행 및 확장합니다.  
+- **내장 언락 기능** – 내부적으로 **CAPTCHA, 브라우저 핑거프린트, 재시도, JS 렌더링**을 자동 처리합니다.  
 - **다단계 내비게이션** – 클릭, 스크롤, 폼 제출, 호버 상호작용을 자동화합니다.  
-- **무제한 스케일링** – **레ート制限 없이 수천 개의 同時接続 브라우저 セッション**을 실행할 수 있습니다.  
-- **글로벌 지리 액세스** – [**195개 국가에 걸친 72M+ レジデンシャルプロキシ IP**](https://brightdata.co.kr/proxy-types/residential-proxies)로 로컬라이즈된 콘텐츠를 언락합니다.  
-- **원활한 디버깅** – **Chrome DevTools 통합**으로 セッション을 실시간으로 모니터링합니다.  
+- **무제한 스케일링** – **레ート制限 없이 수천 개의 동시 연결 브라우저 세션**을 실행할 수 있습니다.  
+- **글로벌 지리 액세스** – [**195개 국가에 걸친 72M+ レジデンシャル프록시 IP**](https://brightdata.co.kr/proxy-types/residential-proxies)로 로컬라이즈된 콘텐츠를 언락합니다.  
+- **원활한 디버깅** – **Chrome DevTools 통합**으로 세션을 실시간으로 모니터링합니다.  
 
 ---
 
@@ -64,7 +64,7 @@ async function main() {
 main().catch(err => console.error(err.stack || err));
 ```
 
-> **💡 [Puppeteer로 Webスクレイピング](https://brightdata.co.kr/blog/how-tos/web-scraping-puppeteer)에 대해 더 알아보십시오**
+> **💡 [Puppeteer로 Web스크레이핑](https://brightdata.co.kr/blog/how-tos/web-scraping-puppeteer)에 대해 더 알아보십시오**
 
 ### Playwright 예시 (Python)
 
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     asyncio.run(main())
 ```
 
-> **💡 [Playwright로 Webスクレイピング](https://brightdata.co.kr/blog/how-tos/playwright-web-scraping)에 대해 더 알아보십시오**
+> **💡 [Playwright로 Web스크레이핑](https://brightdata.co.kr/blog/how-tos/playwright-web-scraping)에 대해 더 알아보십시오**
 
 ### Selenium 예시 (JavaScript)
 
@@ -121,13 +121,13 @@ async function main() {
 main().catch(err => console.error(err.stack || err));
 ```
 
-> **💡 [Selenium으로 Webスクレイピング](https://brightdata.co.kr/blog/how-tos/using-selenium-for-web-scraping)에 대해 더 알아보십시오**
+> **💡 [Selenium으로 Web스크레이핑](https://brightdata.co.kr/blog/how-tos/using-selenium-for-web-scraping)에 대해 더 알아보십시오**
 
 ## 🔥 고급 기능
 
 ### Chrome DevTools로 디버깅
 
-브라우저 セッション을 실시간으로 모니터링합니다:
+브라우저 세션을 실시간으로 모니터링합니다:
 
 ```js
 const { exec } = require('child_process');
@@ -151,8 +151,8 @@ const { status } = await client.send('Captcha.solve', { detectTimeout: 30000 });
 
 > **🤖 [CAPTCHA Solver](https://github.com/bright-kr/Captcha-solver)에 대해 더 알아보십시오.**
 
-## 🔄 자동 IPアドレス ローテーション 및 언락  
-Scraping Browser는 통합된 [ローテーティングプロキシ](https://brightdata.co.kr/solutions/rotating-proxies) 덕분에 IPアドレス를 자동으로 로테이션하며, 원활한 데이터 수집을 위해 リトライ도 처리합니다. 
+## 🔄 자동 IP 주소 ローテーション 및 언락  
+Scraping Browser는 통합된 [ローテーティング프록시](https://brightdata.co.kr/solutions/rotating-proxies) 덕분에 IP 주소를 자동으로 로테이션하며, 원활한 데이터 수집을 위해 재시도도 처리합니다. 
 
 ## 💰 가격  
 
@@ -172,10 +172,10 @@ Scraping Browser는 통합된 [ローテーティングプロキシ](https://bri
 Scraping Browser는 Bright Data의 인프라에서 실행되는 완전 관리형 GUI 기반 브라우저로, 가장 강력하게 보호된 사이트까지도 자동으로 언락합니다.  
 
 ### Scraping Browser는 봇 탐지를 어떻게 처리합니까?  
-ブラウザフィンガープリント, CAPTCHA 해결, リトライ를 자동화하고 실제 사용자 행동을 모방하여 탐지를 방지합니다.  
+브라우저 핑거프린트, CAPTCHA 해결, 재시도를 자동화하고 실제 사용자 행동을 모방하여 탐지를 방지합니다.  
 
 ### Scraping Browser는 Puppeteer, Playwright, Selenium과 호환됩니까?  
 네! 모든 주요 웹 자동화 도구와 원활하게 통합됩니다.  
 
-### 언제 プロキシ 대신 Scraping Browser를 사용해야 합니까?  
+### 언제 프록시 대신 Scraping Browser를 사용해야 합니까?  
 JavaScript 렌더링, 상호작용 동작(클릭, 스크롤), 다단계 내비게이션이 필요할 때 Scraping Browser를 사용하십시오.
